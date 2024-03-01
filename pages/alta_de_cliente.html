@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--los iconos-->
+        <script src="https://kit.fontawesome.com/a9ce15d40f.js" crossorigin="anonymous"></script>
+        <title>Document</title>
+        <!--favicon muestra el icino de mi pagina -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body class="body">
+        <header class="header pt-2 pb-3 m-auto position-sticky top-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="../assets/images/Logo_lincoln_refrescos.png" alt="Logo" width="125">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end" >
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="./nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./nuestras_marcas.html">Nuestras Marcas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./alta_de_cliente.html">Alta de Cliente</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+            <main>
+              <section class="cabecerasIguales d-flex justify-content-center align-items-center m-auto">
+                <h1 class="tituloUno">ALTA DE CLIENTE</h1>
+            </section>
+              <section>
+                  <p class="text-center w-75 m-auto mt-5 mb-5 ">Complete el siguiente formulario para darse de alta como cliente de Distribuidora Lincoln Refrescos. Nos comunicaremos a la brevedad para confirmar su solicitud.</p>
+                  <section class="w-75 m-auto">
+                      <form action="" method="post">
+                          <div class="mb-3">
+                              <label for="nombredefantasia" class="form-label parrafoSeccionMarcas">Nombre de Fantasia:</label>
+                              <input type="text" class="form-control" placeholder="Ingrese nombre de fantasia" required name="nombredefantasia" id="nombreconsulta">
+                          </div>
+                          <div class="mb-3">
+                              <label for="CUITalta" class="form-label parrafoSeccionMarcas">CUIT:</label>
+                              <input type="text" class="form-control" placeholder="Ingrese su CUIT" required name="CUITalta" id="CUITalta">
+                          </div>
+                          <div class="mb-3">
+                              <label for="direccionalta" class="form-label parrafoSeccionMarcas">Direccion:</label>
+                              <input type="text" class="form-control" placeholder="Ingrese la direccion del Comercio" required name="direccionalta" id="direccionalta">
+                          </div>
+                          <div class="mb-3">
+                              <label for="localidadalta" class="form-label parrafoSeccionMarcas">Localidad:</label>
+                              <input type="text" class="form-control" placeholder="Ingrese su localidad" required name="localidadalta" id="localidadalta">
+                          </div>
+                          <div class="mb-3">
+                              <label for="telefonoalta" class="form-label parrafoSeccionMarcas">Telefono de Contacto:</label>
+                              <input type="text" class="form-control" placeholder="(  )-(      )" required name="telefonoalta" id="telefonoalta">
+                          </div>
+                          <div class="mb-5">
+                              <label for="emailalta" class="form-label parrafoSeccionMarcas">Email:</label>
+                              <input type="email" class="form-control" placeholder="xxxxxxx@servidor.com" required name="emailalta" id="emailalta">
+                          </div>
+                          <div class="botonesCargar d-flex justify-content-around">
+                              <div class="mb-3 d-flex justify-content-center align-items-center">
+                                  <label for="constanciadecuit" class="form-label parrafoSeccionMarcas">Constancia de CUIT:</label>
+                                  <input type="submit" class="btn btn-primary custom-btn" value="Cargar">
+                              </div>
+                              <div class="mb-3 d-flex justify-content-center align-items-center">
+                                  <label for="reba" class="form-label parrafoSeccionMarcas">REBA:</label>
+                                  <input type="submit" class="btn btn-primary custom-btn" value="Cargar">
+                              </div>
+                          </div>
+                          <div class="mb-3">
+                              <label for="comentarios" class="form-label parrafoSeccionMarcas">Comentarios:</label>
+                              <textarea class="form-control" name="comentarios" id="comentarios" rows="3" placeholder="Comentarios"></textarea>
+                          </div>
+                          <div class="mb-3">
+                              <input type="submit" class="btn btn-primary custom-btn" value="Enviar">
+                          </div>
+                      </form>
+                  </section>
+              </section>
+          </main>
+        <footer class="footer m-auto">
+          <section class="sectionFoot d-flex justify-content-between align-items-center">
+              <img class="logoLincolnPie"  src="../assets/images/Logo_lincoln_refrescos.png" alt="Logo" width="100">
+              <div class="contenido-centro">
+                  <p> Diereccion: Soldado Heredia 26</p>
+                  <p> Lincoln, Bs. As.-Argentina</p>
+                  <p> Telefono: 2355 222222</p>
+                  <p>Todos los derechos reservados</p>
+              </div>
+              <img class="logoQuilmesPie" src="../assets/images/logomalteriaquilmes.svg" alt="Logo" width="150">
+          </section>
+      </footer>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
