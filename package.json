@@ -1,0 +1,22 @@
+{
+  "name": "lincolnrefrescos",
+  "version": "1.0.0",
+  "description": "Proyecto Lincoln Refrescos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samantae86/proyecto_coder_desarrollo_web.git"
+  },
+  "author": "Samanta Echeto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samantae86/proyecto_coder_desarrollo_web/issues"
+  },
+  "homepage": "https://github.com/Samantae86/proyecto_coder_desarrollo_web#readme",
+  "dependencies": {
+    "sas": "^3.0.4"
+  }
+}

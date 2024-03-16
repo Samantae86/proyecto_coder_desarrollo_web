@@ -7,7 +7,7 @@
         <script src="https://kit.fontawesome.com/a9ce15d40f.js" crossorigin="anonymous"></script>
         <title>Document</title>
         <!--favicon muestra el icino de mi pagina -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
@@ -45,8 +45,8 @@
                 </div>
               </nav>
         </header>
-            <main>
-              <section class="cabecerasIguales d-flex justify-content-center align-items-center m-auto">
+        <main>
+            <section class="cabecerasIguales d-flex justify-content-center align-items-center m-auto">
                 <h1 class="tituloUno">ALTA DE CLIENTE</h1>
             </section>
               <section>
@@ -55,7 +55,7 @@
                       <form action="" method="post">
                           <div class="mb-3">
                               <label for="nombredefantasia" class="form-label parrafoSeccionMarcas">Nombre de Fantasia:</label>
-                              <input type="text" class="form-control" placeholder="Ingrese nombre de fantasia" required name="nombredefantasia" id="nombreconsulta">
+                              <input type="text" class="form-control" placeholder="Ingrese nombre de fantasia" required name="nombredefantasia" id="nombredefantasia">
                           </div>
                           <div class="mb-3">
                               <label for="CUITalta" class="form-label parrafoSeccionMarcas">CUIT:</label>
@@ -79,12 +79,12 @@
                           </div>
                           <div class="botonesCargar d-flex justify-content-around">
                               <div class="mb-3 d-flex justify-content-center align-items-center">
-                                  <label for="constanciadecuit" class="form-label parrafoSeccionMarcas">Constancia de CUIT:</label>
-                                  <input type="submit" class="btn btn-primary custom-btn" value="Cargar">
+                                  <label for="constanciadecuit" class="form-label">Constancia de CUIT:</label>
+                                  <input type="submit" id="constanciadecuit" class="btn btn-primary custom-btn border-0 text-center text-decoration-none d-block pe-auto" value="Cargar">
                               </div>
                               <div class="mb-3 d-flex justify-content-center align-items-center">
                                   <label for="reba" class="form-label parrafoSeccionMarcas">REBA:</label>
-                                  <input type="submit" class="btn btn-primary custom-btn" value="Cargar">
+                                  <input type="submit" id="reba" class="btn btn-primary custom-btn border-0 text-center text-decoration-none d-block pe-auto" value="Cargar">
                               </div>
                           </div>
                           <div class="mb-3">
@@ -92,24 +92,25 @@
                               <textarea class="form-control" name="comentarios" id="comentarios" rows="3" placeholder="Comentarios"></textarea>
                           </div>
                           <div class="mb-3">
-                              <input type="submit" class="btn btn-primary custom-btn" value="Enviar">
+                              <input type="submit" class="btn btn-primary custom-btn border-0 text-center text-decoration-none d-block pe-auto" value="Enviar">
                           </div>
                       </form>
                   </section>
               </section>
           </main>
         <footer class="footer m-auto">
-          <section class="sectionFoot d-flex justify-content-between align-items-center">
+          <section class="sectionFoot d-flex justify-content-evenly align-items-center">
               <img class="logoLincolnPie"  src="../assets/images/Logo_lincoln_refrescos.png" alt="Logo" width="100">
               <div class="contenido-centro">
-                  <p> Diereccion: Soldado Heredia 26</p>
-                  <p> Lincoln, Bs. As.-Argentina</p>
-                  <p> Telefono: 2355 222222</p>
-                  <p>Todos los derechos reservados</p>
+                <p class="localizacionFoot"> Diereccion: Soldado Heredia 26</p>
+                <p class="localizacionFoot"> Lincoln, Bs. As.-Argentina</p>
+                <p class="localizacionFoot"> Telefono: 2355 222222</p>
+                <p class="localizacionFoot">Todos los derechos reservados</p>
               </div>
               <img class="logoQuilmesPie" src="../assets/images/logomalteriaquilmes.svg" alt="Logo" width="150">
           </section>
       </footer>
       <script src="../js/bootstrap.bundle.min.js"></script>
+      
   </body>
   </html>

@@ -3,16 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Informacion institucional de la distribuidora oficial de malteria y cerveceria quilmes en la localidad de lincoln">
          <!--los iconos-->
         <script src="https://kit.fontawesome.com/a9ce15d40f.js" crossorigin="anonymous"></script>
-        <title>Document</title>
+        <title> Distribuidora de Bebidas - Inicio</title>
         <!--favicon muestra el icono de mi pagina -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body class="body">
-        <header class="header pt-2 pb-3 position-sticky top-0">
+        <header class="header pt-2 pb-3 position-sticky top-0  z-index-1000">
+            <!-- Contenido del encabezado -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
@@ -45,17 +47,17 @@
                 </div>
               </nav>
         </header>
-        <!--Contenido principal en el main-->
-        <main class="main" >
-            <section class=" w-100 d-flex flex-column align-middle">
+        <main class="main">
+            <!-- Contenido principal -->
+            <section class=" w-100 flexPropia ">
                 <div class="videoDistri position-relative w-100 h-0 overflow-hidden">
                     <!--Aca cargar el video de inicio de la distribuidora-->
-                    <video controls autoplay>
+                    <video autoplay muted class="position-absolute w-100 top-0">
                         <source  src="./assets/video/videofrentedistribuidora.mp4" type="video/mp4" alt="Video del frente de la distribuidora" />
                     </video>
                 </div>
-                <div class="tituloVideo position-absolute  top-50 start-50 translate-middle z-index-1 fs-2 fw-700" >
-                    <h1 class="tituloUno">Distribuidora Oficial de Malteria y Cerveceria Quilmes</h1>
+                <div class="tituloInicio text-center text-decoration-underline">
+                    <h1 >Distribuidora Oficial de Malteria y Cerveceria Quilmes</h1>
                 </div>
             </section>
             <section>
@@ -63,61 +65,61 @@
                 <!-- aca van las imagenes de las marcas en una barra que se vaya moviendo-->
                 <section class="contenedorMarcas d-flex flex-wrap justify-content-center align-items-end">
                     <section class="w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logostella.png" width="100" alt="logo de cerveza Stella">
+                        <img class="logosMarcas w-50 " src="./assets/images/logostella.png" width="100" alt="logo de cerveza Stella">
                         <p  class="parrafoSeccionMarcas m-3">Stella Artois</p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logoquilmes.png" width="100" alt="logo de cerveza quilmes">
+                        <img class="logosMarcas w-50" src="./assets/images/logoquilmes.png" width="100" alt="logo de cerveza quilmes">
                         <p class="parrafoSeccionMarcas  m-3 align-items-end">Quilmes</p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logopatagonia.png" width="100" alt="logo de cerveza Patagonia">
+                        <img class="logosMarcas w-50" src="./assets/images/logopatagonia.png" width="100" alt="logo de cerveza Patagonia">
                         <p class="parrafoSeccionMarcas m-3 align-items-end">Patagonia</p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logocorona.png" width="100" alt="logo de cerveza Corona">
+                        <img class="logosMarcas w-50" src="./assets/images/logocorona.png" width="100" alt="logo de cerveza Corona">
                         <p class="parrafoSeccionMarcas m-3 align-items-end">Corona</p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logopepsi.png" width="100" alt="logo de gaseosa pepsi">
+                        <img class="logosMarcas w-50" src="./assets/images/logopepsi.png" width="100" alt="logo de gaseosa pepsi">
                         <p class="parrafoSeccionMarcas m-3 align-items-end " colorGris>Pepsi</p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logomirinda.jpeg" width="100" alt="logo de gaseosa mirinda">
+                        <img class="logosMarcas w-50" src="./assets/images/logomirinda.jpeg" width="100" alt="logo de gaseosa mirinda">
                         <p class="parrafoSeccionMarcas m-3 align-items-end "> Mirinda </p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logosevenup.jpeg" width="100" alt="logo de gaseosa seven up">
+                        <img class="logosMarcas w-50" src="./assets/images/logosevenup.jpeg" width="100" alt="logo de gaseosa seven up">
                         <p class="parrafoSeccionMarcas m-3 align-items-end "> Seven Up </p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center" class="seccionMarcas">
-                        <img class="w-50" src="./assets/images/logoecodelosande.png" width="100" alt="logo de agua mineral eco de los andes">
+                        <img class="logosMarcas w-50" src="./assets/images/logoecodelosande.png" width="100" alt="logo de agua mineral eco de los andes">
                         <p class="parrafoSeccionMarcas m-3 align-items-end">Eco de los Andes</p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logonestle.jpeg" width="100" alt="logo de agua mineral nestle pureza vital" >
+                        <img class="logosMarcas w-50" src="./assets/images/logonestle.jpeg" width="100" alt="logo de agua mineral nestle pureza vital" >
                         <p class="parrafoSeccionMarcas m-3 align-items-end ">Pureza Vital </p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logogatorade.png" width="100" alt="logo de gatorade" >
+                        <img class="logosMarcas w-50" src="./assets/images/logogatorade.png" width="100" alt="logo de gatorade" >
                         <p class="parrafoSeccionMarcas m-3 align-items-end "> Garorade </p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logoredbull.png" width="100" alt="logo de red bull" >
+                        <img class="logosMarcas w-50" src="./assets/images/logoredbull.png" width="100" alt="logo de red bull" >
                         <p class="parrafoSeccionMarcas m-3 align-items-end"> Red Bull </p>
                     </section>
                     <section class=" w-25 m-3 align-items-center text-center">
-                        <img class="w-50" src="./assets/images/logobodegadanterobino.jpeg" width="100" alt="logo de bodega dante robino" >
+                        <img class="logosMarcas w-50" src="./assets/images/logobodegadanterobino.jpeg" width="100" alt="logo de bodega dante robino" >
                         <p class="parrafoSeccionMarcas m-3 align-items-end "> Bodega Dante Robino </p>
                     </section>
                 </section>
             </section>
             <section class="w-75 mx-auto">
-                <h2 class="subtituloDos">Zonas de Distribución</h2>
-                <div class="divZona d-flex justify-content-between">
+                <h2 class="subtituloDos text-center">Zonas de Distribución</h2>
+                <div class="divZona d-flex justify-content-evenly">
                     <ul class="zonaDistriUno">
                         <li class="parteUno">Lincoln</li>
-                        <li class="parteUno">Vedia</a></li>
+                        <li class="parteUno">Vedia</li>
                         <li class="parteUno">General Pinto</li>
                     </ul>
                     <ul class="zonaDistriDos">
@@ -125,28 +127,34 @@
                         <li class="parteDos">Roberts</li>
                         <li class="parteDos">Arenaza</li>
                     </ul>
+                    <ul class="zonaDistriTres">
+                        <li class="parteTres">Martinez de Hoz</li>
+                        <li class="parteTres">Bayauca</li>
+                        <li class="parteTres">Bragado</li>
+                    </ul>
                 </div>
             </section>
             <section class="seccionMision">
                     <div class="contenido">
-                        <h2 class="subtituloMision">Nuestra Mision</h2>
-                        <p class="parrafoMision ">Como distribuidora oficial de Quilmes, nuestra misión es proporcionar a nuestros clientes y consumidores productos de la más alta calidad, entregando un servicio excepcional y promoviendo el consumo responsable. Nos comprometemos a ser líderes en la distribución de las marcas de Quilmes, fomentando relaciones sólidas con nuestros socios comerciales y contribuyendo al crecimiento y desarrollo de las comunidades en las que operamos. Buscamos ser reconocidos como un referente de excelencia en la distribución de bebidas, manteniendo siempre los más altos estándares de integridad, responsabilidad y servicio al cliente.</p>
+                        <h2 class="subtituloMision text-center">Nuestra Mision</h2>
+                        <p class="parrafoMision text-left">Como distribuidora oficial de Quilmes, nuestra misión es proporcionar a nuestros clientes y consumidores productos de la más alta calidad, entregando un servicio excepcional y promoviendo el consumo responsable. Nos comprometemos a ser líderes en la distribución de las marcas de Quilmes, fomentando relaciones sólidas con nuestros socios comerciales y contribuyendo al crecimiento y desarrollo de las comunidades en las que operamos. Buscamos ser reconocidos como un referente de excelencia en la distribución de bebidas, manteniendo siempre los más altos estándares de integridad, responsabilidad y servicio al cliente.</p>
                     </div>
-                    <img class="imagenMision" src="./assets/images/7822.jpg" alt="Fotografia del grupo de trabajo" width="400">
+                    <img class="imagenMision object-fit-contain" src="./assets/images/7822.jpg" alt="Fotografia del grupo de trabajo" width="400">
             </section>
         </main>
-        <footer class="footer m-auto">
-            <section class="sectionFoot d-flex justify-content-between align-items-center">
-                <img class="logoLincolnPie"  src="./assets/images/Logo_lincoln_refrescos.png" alt="Logo" width="100">
+        <footer class="footer ">
+            <section class="sectionFoot d-flex justify-content-evenly align-items-center">
+                <img class="logoLincolnPie"  src="./assets/images/Logo_lincoln_refrescos.png" alt="Logo" >
                 <div class="contenido-centro">
-                    <p> Diereccion: Soldado Heredia 26</p>
-                    <p> Lincoln, Bs. As.-Argentina</p>
-                    <p> Telefono: 2355 222222</p>
-                    <p>Todos los derechos reservados</p>
+                    <p class="localizacionFoot"> Diereccion: Soldado Heredia 26</p>
+                    <p class="localizacionFoot"> Lincoln, Bs. As.-Argentina</p>
+                    <p class="localizacionFoot"> Telefono: 2355 222222</p>
+                    <p class="localizacionFoot">Todos los derechos reservados</p>
                 </div>
-                <img class="logoQuilmesPie" src="./assets/images/logomalteriaquilmes.svg" alt="Logo" width="150">
+                <img class="logoQuilmesPie" src="./assets/images/logomalteriaquilmes.svg" alt="Logo" >
             </section>
         </footer>
+        <!-- Contenido del pie de página -->
         <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

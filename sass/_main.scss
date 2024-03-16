@@ -1,0 +1,151 @@
+.subtituloDos {
+    color: $principal-blue;
+    font-family: $font-familydos;
+    font-weight: $font-weight;
+}
+/*Index*/
+
+.flexPropia{
+    @include flexible(column,middle);
+}
+.videoDistri {
+    padding-top: 56.25%;
+}
+
+.tituloInicio {
+    color: $principal-blue;
+    font-family: $font-familyuno;
+    font-weight: 800;
+    font-optical-sizing: auto;
+    font-size: 6rem;
+    margin-top: 20px;
+}
+
+.contenedorMarcas {
+    width: map-get($anchos, ancho-90 );
+    margin: 50px auto;   
+}
+
+.parrafoSeccionMarcas {
+    font-family: $font-familydos;
+    font-size: 1rem;
+    font-weight: $font-weight;
+    color: $colorfont-p;
+}
+.contenedorMarcas .logosMarcas:hover{
+    transform: scale(1.2);
+}
+
+.divZona {
+    margin-top: 70px;
+}
+
+.zonaDistriUno, .zonaDistriDos, .zonaDistriTres {
+    list-style:circle;
+    font-weight: $font-weight;
+    font-family: $font-familydos;
+    font-size: 1.2rem;
+    color: $colorfont-p;
+}
+
+
+.seccionMision {
+    width: map-get($anchos, ancho-70);
+    display: flex;
+    margin: 70px auto 50px auto;
+}
+
+.seccionMision .contenido {
+    width: map-get($anchos, ancho-50 );
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.seccionMision .contenido .subtituloMision {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:$principal-blue;
+    font-family:$font-familydos;
+}
+
+.seccionMision .contenido .parrafoMision {
+    color: $principal-blue;
+    font-family: $font-familydos;
+}
+
+/*Todas menos index*/
+.cabecerasIguales {
+    background-color: $secundary-blue;
+    height: 200px;
+}
+
+.cabecerasIguales .tituloUno {
+    padding: 10px 20px; 
+    color: $white-color; 
+    font-family: $font-familyuno; 
+    font-size: 3rem; 
+    font-weight: $font-weight;
+}
+
+
+
+/*Donde haya formulario*/
+.custom-btn {
+    background-color:$secundary-blue; /* Color de fondo del botón */
+    color: $white-color; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interior */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 20px; /* Radio de borde para hacerlo redondeado */
+  }
+  
+  
+  .custom-btn:hover {
+    background-color: $bot-blue; /* Cambiar el color de fondo al pasar el ratón */
+  }
+
+  
+@media (max-width: 767px) {
+    .tituloVideo {
+        display:none
+    }
+    .subtituloDos{
+        text-align: center;
+    }
+    .divZona{
+        width: map-get($anchos, ancho-100 );;
+        margin:30px auto;
+    }
+    .seccionMision {
+        flex-direction: column;
+        width: map-get($anchos, ancho-100 );
+        .subtituloMision{
+            width: map-get($anchos, ancho-90 );
+            color: $principal-blue;
+            font-family: $font-familydos;
+        }
+        
+    }
+    .sectionFoot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-centro {
+        text-align: center;
+        order:2;
+    }
+
+    .sectionFoot div {
+        margin-bottom: 15px;
+        
+    }
+}
+
+
+@media (max-width: 767px) {
+    .botonesCargar{
+      flex-direction: column;
+      align-items: baseline;
+  }
+  }

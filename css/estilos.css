@@ -1,232 +1,225 @@
-/* Estilos generales */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?familatoly=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  line-height: initial;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .body {
-    color: rgb(15, 15, 105);
-    font-family: 'Lato', sans-serif;
-    line-height: initial;
+  background-image: linear-gradient(to top, #000047, #001357, #002267, #003177, #004087, #004e94, #005ca0, #006aab, #007ab5, #0089be, #0099c5, #00a8ca);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
-    color: rgb(15, 15, 105);
-    font-weight: 700;
+  color: rgb(15, 15, 105);
+  font-weight: 700;
+}
+
+.subtituloDos {
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+/*Index*/
+.flexPropia {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
 }
 
 .videoDistri {
-    padding-top: 30%; 
+  padding-top: 56.25%;
 }
 
-.videoDistri video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.tituloVideo { 
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 10px 20px; 
-    color: white; 
-    font-family: 'Open Sans', sans-serif; 
-}
-
-/* Estilos para las marcas */
-.subtituloDos {
-    color: rgb(0, 0, 71);
-    font-family: 'Lato', sans-serif;
+.tituloInicio {
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-optical-sizing: auto;
+  font-size: 6rem;
+  margin-top: 20px;
 }
 
 .contenedorMarcas {
-    width: 90%;
-    margin: 50px auto;   
+  width: 90%;
+  margin: 50px auto;
 }
 
 .parrafoSeccionMarcas {
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: gray;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
 }
 
-/* Estilos para las zonas de distribución */
+.contenedorMarcas .logosMarcas:hover {
+  transform: scale(1.2);
+}
+
 .divZona {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
-.zonaDistriUno, .zonaDistriDos {
-    list-style: none;
-    font-weight: 700;
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    color: rgb(15, 15, 105);
+.zonaDistriUno, .zonaDistriDos, .zonaDistriTres {
+  list-style: circle;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
 }
 
-/* Estilos para la sección de la misión */
 .seccionMision {
-    width: 70%;
-    display: flex;
-    margin: 70px auto 50px auto;
+  width: 70%;
+  display: flex;
+  margin: 70px auto 50px auto;
 }
 
 .seccionMision .contenido {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .seccionMision .contenido .subtituloMision {
-    font-size: 2rem;
-    text-align: center;
-    margin: 50px 0;
-    color: rgb(0, 0, 71);
-    font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
 }
 
 .seccionMision .contenido .parrafoMision {
-    text-align: left;
-    color: rgb(0, 0, 71);
-    font-family: 'Lato', sans-serif;
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
 }
 
-.seccionMision .imagenMision {
-    margin: auto;
-}
-
-/* Estilos para el pie de página */
-.footer {
-    width: 90%;
-    margin-top: 100px;
-}
-
-.logoLincolnPie{
-    width: 100px;
-    height: 100px;
-}
-
-.logoQuilmesPie {
-    width: 150px;
-    height: 150px;
-}
-.footer .contenido-centro {
-    margin-top: 45px;
-    color: rgb(15, 15, 105);
-    font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
-}
-
+/*Todas menos index*/
 .cabecerasIguales {
-    background-color: rgb(15, 15, 105);
-    height: 200px;
+  background-color: rgb(15, 15, 105);
+  height: 200px;
 }
 
 .cabecerasIguales .tituloUno {
-    padding: 10px 20px; 
-    color: white; 
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 3rem; 
-    font-weight: 700;
+  padding: 10px 20px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-.seccionMedia {
-    width: 80%;
-}
-
-.seccionMedia .parrafoAnterior, .seccionMedia .parrafoPosterior {
-    font-family: 'Lato', sans-serif;
-    color: rgb(15, 15, 105);
-}
-
-.masInfo {
-    width: 70%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 70px auto;
-}
-
-.masInfo .detalle {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: gray;
-}
-
-.masInfo .pGeneral {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.container-fuid{
-    max-width: 500px;
-}
+/*Donde haya formulario*/
 .custom-btn {
-  background-color:rgb(15, 15, 105); /* Color de fondo del botón */
-  border: none; /* Sin borde */
+  background-color: rgb(15, 15, 105); /* Color de fondo del botón */
   color: white; /* Color del texto */
   padding: 10px 20px; /* Espaciado interior */
-  text-align: center; /* Alineación del texto */
-  text-decoration: none; /* Sin decoración de texto */
-  display: inline-block; /* Mostrar como elemento en línea */
   font-size: 16px; /* Tamaño del texto */
   border-radius: 20px; /* Radio de borde para hacerlo redondeado */
-  cursor: pointer; /* Cambiar el cursor a mano al pasar el ratón */
 }
-
 
 .custom-btn:hover {
   background-color: #0056b3; /* Cambiar el color de fondo al pasar el ratón */
 }
 
-.social-iconos {    
-    margin-right: 20px;
-    font-size: 50px; 
-    color:rgb(15, 15, 105); 
-    justify-content: space;
+@media (max-width: 767px) {
+  .tituloVideo {
+    display: none;
+  }
+  .subtituloDos {
+    text-align: center;
+  }
+  .divZona {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .seccionMision {
+    flex-direction: column;
+    width: 100%;
+  }
+  .seccionMision .subtituloMision {
+    width: 90%;
+    color: rgb(255, 255, 255);
+    font-family: "Lato", sans-serif;
+  }
+  .sectionFoot {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenido-centro {
+    text-align: center;
+    order: 2;
+  }
+  .sectionFoot div {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .botonesCargar {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+.footer .sectionFoot .logoLincolnPie {
+  width: 100px;
+  height: 100px;
+}
+.footer .sectionFoot .logoQuilmesPie {
+  width: 150px;
+  height: 150px;
+}
+.footer .sectionFoot .contenido-centro .localizacionFoot {
+  color: rgb(15, 15, 105);
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/*Nosotros*/
+.seccionMedia {
+  width: 80%;
+}
+
+.seccionMedia .parrafoAnterior, .seccionMedia .parrafoPosterior {
+  font-family: "Lato", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.masInfo {
+  width: 80%;
+  margin: 70px auto;
+}
+.masInfo .detalle {
+  color: rgb(255, 255, 255);
+}
+.masInfo .detalle .pGeneral {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
-    .tituloVideo {
-        display:none
-    }
-    .subtituloDos{
-        text-align: center;
-    }
-    .divZona{
-        width: 100%;
-        margin:30px auto;
-    }
-    .seccionMision {
-        flex-direction: column;
-        width: 100%;
-        .subtituloMision{
-            width: 100%;
-            color: rgb(0, 0, 71);
-            font-family: 'Lato', sans-serif;
-        }
-        
-    }
-    .sectionFoot {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contenido-centro {
-        text-align: center;
-        order:2;
-    }
-
-    .sectionFoot div {
-        margin-bottom: 15px;
-        
-    }
-    .masInfo{
-        flex-direction: column;
-    }
-    .botonesCargar{
-        flex-direction: column;
-        align-items: baseline;
-    }
+  .masInfo {
+    flex-direction: column;
+  }
 }
+/*Contaco*/
+.social-iconos {
+  margin-right: 20px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=estilos.css.map */

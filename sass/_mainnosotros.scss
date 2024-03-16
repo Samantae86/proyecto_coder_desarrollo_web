@@ -1,0 +1,30 @@
+/*Nosotros*/
+.seccionMedia {
+    width: map-get($anchos, ancho-80);
+}
+
+.seccionMedia .parrafoAnterior, .seccionMedia .parrafoPosterior {
+    font-family: $font-familydos;
+    color: $colorfont-p;
+}
+
+.masInfo {
+    width: map-get($anchos, ancho-80);
+    margin: 70px auto;
+    .detalle{
+        color: $colorfont-p;
+        .pGeneral{
+            font-family: $font-familydos;
+            font-weight: $font-weight;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .masInfo{
+        flex-direction: column;
+    }
+    
+}
