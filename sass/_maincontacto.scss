@@ -4,3 +4,14 @@
     font-size: 50px; 
     color:$colorfont-p;
 }
+
+@media (max-width: 767px) {
+    .seguinos{
+        width: map-get($anchos, ancho-90 );
+        margin: auto;
+        .redes{
+            margin: auto;
+            text-align: center;
+        }
+    }
+}

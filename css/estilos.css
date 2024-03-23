@@ -88,6 +88,7 @@ body {
   width: 50%;
   margin: auto;
   padding-top: 50px;
+  padding-right: 20px;
   padding-bottom: 50px;
 }
 
@@ -101,6 +102,11 @@ body {
 .seccionMision .contenido .parrafoMision {
   color: rgb(255, 255, 255);
   font-family: "Lato", sans-serif;
+}
+
+.seccionMision .imagenMision {
+  padding-top: 50px;
+  width: 50%;
 }
 
 /*Todas menos index*/
@@ -149,6 +155,9 @@ body {
     width: 90%;
     color: rgb(255, 255, 255);
     font-family: "Lato", sans-serif;
+  }
+  .seccionMision .imagenMision {
+    margin: auto;
   }
   .sectionFoot {
     flex-direction: column;
@@ -208,6 +217,7 @@ body {
 .masInfo .detalle .pGeneral {
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  font-size: 0.8rem;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -215,6 +225,10 @@ body {
 @media (max-width: 767px) {
   .masInfo {
     flex-direction: column;
+    align-items: center;
+  }
+  .masInfo .detalle {
+    margin-bottom: 20px;
   }
 }
 /*Contaco*/
@@ -222,4 +236,15 @@ body {
   margin-right: 20px;
   font-size: 50px;
   color: rgb(255, 255, 255);
+}
+
+@media (max-width: 767px) {
+  .seguinos {
+    width: 90%;
+    margin: auto;
+  }
+  .seguinos .redes {
+    margin: auto;
+    text-align: center;
+  }
 }/*# sourceMappingURL=estilos.css.map */
